@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>90</y>
+      <width>179</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="info">
+     <item>
+      <widget class="QLabel" name="mode_info">
+       <property name="text">
+        <string>当前模式：读者</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="logout">
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="headLine">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>30</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 18pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>期刊管理系统</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>370</y>
+      <width>471</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="operations">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>170</y>
+      <width>471</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="handleWidth">
+     <number>15</number>
+    </property>
+    <widget class="QPushButton" name="journal_quiry">
+     <property name="text">
+      <string>我要找书</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="borrow_quiry">
+     <property name="text">
+      <string>我的借阅</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="booked_quiry">
+     <property name="text">
+      <string>我的预定</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>logout</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>log_out()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>608</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>778</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>journal_quiry</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>journal_inquiry()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>274</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>83</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>borrow_quiry</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>borrow_inquiry()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>364</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>585</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>booked_quiry</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>book_and_inquiry()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>528</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>510</x>
+     <y>575</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>log_out()</slot>
+  <slot>journal_inquiry()</slot>
+  <slot>borrow_inquiry()</slot>
+  <slot>book_and_inquiry()</slot>
+ </slots>
+</ui>

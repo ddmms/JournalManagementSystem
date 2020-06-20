@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="headLine">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>30</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 18pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>期刊管理系统</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="insert_info">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>120</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>信息录入</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inquiry_info">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>280</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>信息查询</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="handle_info">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>380</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>信息处理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="instock_btn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>150</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>期刊入库登记</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="catalog_btn">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>150</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>期刊目录登记</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="content_btn">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>150</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>期刊内容登记</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>130</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="borrow_btn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>210</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>借阅登记</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="whereabouts_btn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>310</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>期刊去向查询</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="subscribe_btn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>410</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>期刊征订</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>290</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>390</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>90</y>
+      <width>179</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="info">
+     <item>
+      <widget class="QLabel" name="mode_info">
+       <property name="text">
+        <string>当前模式：管理员</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="logout">
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>logout</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>log_out()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>614</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>instock_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>instock_register()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-29</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>catalog_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>catalog_register()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>202</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>-32</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>content_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>content_register()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>362</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>-30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>borrow_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>borrow_register()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-25</x>
+     <y>263</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>whereabouts_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>journal_whereabouts_inquiry()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-21</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>subscribe_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>subscribe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>461</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-42</x>
+     <y>461</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>log_out()</slot>
+  <slot>instock_register()</slot>
+  <slot>catalog_register()</slot>
+  <slot>content_register()</slot>
+  <slot>borrow_register()</slot>
+  <slot>journal_whereabouts_inquiry()</slot>
+  <slot>subscribe()</slot>
+ </slots>
+</ui>

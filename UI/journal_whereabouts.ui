@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>749</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="return_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="headLine">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>30</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 18pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>期刊去向查询</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="whereabouts_result">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>621</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>读者号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>读者名</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>借阅天数</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>借阅时间</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>归还时间</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QSplitter" name="operation">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>90</y>
+      <width>291</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>期刊号</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="journal_no">
+     <property name="placeholderText">
+      <string>请输入期刊号</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="inquiry_btn">
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>749</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>return_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Return()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>19</x>
+     <y>563</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inquiry_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>294</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Return()</slot>
+  <slot>Search()</slot>
+ </slots>
+</ui>
